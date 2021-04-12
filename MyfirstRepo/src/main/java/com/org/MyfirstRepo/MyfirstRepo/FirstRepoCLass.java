@@ -15,17 +15,20 @@ public class FirstRepoCLass {
 		// Create an instance of ChromeDriver to execute our tests
 		driver = new ChromeDriver();
 		
-		String baseUrl = "http:demo.guru99.com/test";
-		String expectedTitle = "Expected Title";
+		String baseUrl = "http:demo.guru99.com/";
+		String expectedTitle = "Demo Site";
 		String actualTitle = "";
 		
+		driver.get(baseUrl);
 		actualTitle = driver.getTitle();
 		
 		if(actualTitle.contentEquals(expectedTitle)) {
-			System.out.println("");
+			System.out.println("passed");
+			System.out.println(actualTitle);
 		}
 		else {
-			System.out.println("");
+			System.out.println("failed");
+			System.out.println(actualTitle);
 		}
 	}
 
