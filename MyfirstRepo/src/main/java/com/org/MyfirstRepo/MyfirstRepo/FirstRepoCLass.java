@@ -23,7 +23,7 @@ public class FirstRepoCLass {
 		actualTitle = driver.getTitle();
 		
 		if(actualTitle.contentEquals(expectedTitle)) {
-			System.out.println("passed");
+			System.out.println("passed  ");
 			System.out.println(actualTitle);
 		}
 		else {
